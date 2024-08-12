@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Converter</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <meta name="description" content="Color Converter using JavaScript" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Color Converter</h2> <p class="notes">
+        <strong>Note:</strong> Enter 6 digits hex color code without the hash
+        (#) symbol.
+      </p>
+      <label for="colorInput">Hex color code (#RRGGBB)</label>
+      <input
+        type="text"
+        id="colorInput"
+        placeholder="Enter 6 digits hex color code"
+      />
+      <div class="btns"><button onclick="convertColor()">Convert</button>
+        <button onclick="reset()">Reset</button></div>
+      <div>
+        <label for="rgbColor">RGB Color</label>
+        <input type="text" id="rgbColor" readonly />
+      </div>
+      <div>
+        <label for="hslColor">HSL Color</label>
+        <input type="text" id="hslColor" readonly />
+      </div>
+      <div>
+        <label for="cssColor">CSS Color</label>
+        <input type="text" id="cssColor" readonly />
+      </div>
+      <p>Color Preview</p>
+      <div class="color-preview" id="colorPreview"></div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
